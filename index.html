@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Outlook calendar sync: a personal Windows utility that synchronizes Exchange calendar events with Google Calendar." />
+  <title>Outlook calendar sync</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header>
+    <a class="brand" href="index.html">Outlook calendar sync</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+  <main id="content">
+    <p class="eyebrow">Personal calendar utility</p>
+    <h1>Outlook calendar sync</h1>
+    <p class="lead">A personal Windows application that copies events from the owner's Microsoft Exchange calendar to the owner's Google Calendar.</p>
+    <section aria-labelledby="operation">
+      <h2 id="operation">How synchronization works</h2>
+      <p>The application runs on the owner's computer. It checks for changes every ten minutes while the computer and application are running and both calendar services are reachable.</p>
+      <p>It copies event titles, start and end times, locations, meeting descriptions, and participant display names. Names appear as text in the event description. Participants are not added as Google Calendar guests, and meeting invitations are not sent. Attachments are not copied.</p>
+    </section>
+    <section aria-labelledby="access">
+      <h2 id="access">Google Calendar access</h2>
+      <p>Google Calendar access is used to create and update copies of Exchange events, remove tracked copies when the source event is removed or cancelled within the synchronization window, and check that the connected calendar is accessible.</p>
+      <p>The application requests the Google Calendar events permission for these operations. It does not request Gmail or Google Drive access.</p>
+    </section>
+    <section aria-labelledby="personal">
+      <h2 id="personal">Personal use</h2>
+      <p>This application is maintained for its owner's personal use. It is not a public calendar synchronization service.</p>
+      <p>Read the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Support: <a href="mailto:kosenkov.denis@gmail.com">kosenkov.denis@gmail.com</a></p>
+    <p><a href="privacy.html">Privacy Policy</a> <span aria-hidden="true">/</span> <a href="terms.html">Terms of Use</a></p>
+  </footer>
+</body>
+</html>

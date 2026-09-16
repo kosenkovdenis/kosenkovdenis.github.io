@@ -1,0 +1,47 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #25292b;
+  background: #ffffff;
+  letter-spacing: 0;
+}
+* { box-sizing: border-box; }
+body { margin: 0; border-top: 5px solid #15705b; }
+header, main, footer { width: min(100% - 3rem, 50rem); margin-inline: auto; }
+header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem; padding-block: 1.4rem; border-bottom: 1px solid #dce3df; }
+.brand { color: #25292b; font-weight: 650; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+nav a { color: #50595b; text-decoration: none; padding-block: 0.25rem; }
+nav a[aria-current="page"] { color: #12634e; text-decoration: underline; text-underline-offset: 0.45rem; }
+main { padding-block: 3.5rem; }
+h1, h2 { color: #192320; line-height: 1.2; font-weight: 650; overflow-wrap: anywhere; }
+h1 { margin: 0 0 1.1rem; font-size: 2.5rem; }
+h2 { margin: 0 0 0.8rem; font-size: 1.3rem; }
+p { margin: 0 0 1rem; overflow-wrap: anywhere; }
+.eyebrow { color: #12634e; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.9rem; }
+.lead { font-size: 1.2rem; color: #394844; max-width: 44rem; }
+.updated { color: #626b6b; font-size: 0.9375rem; }
+section { margin-top: 2.2rem; }
+a { color: #11654e; text-underline-offset: 0.15rem; overflow-wrap: anywhere; }
+a:hover { color: #973f2d; }
+a:focus-visible { outline: 3px solid #9b442f; outline-offset: 5px; border-radius: 2px; }
+footer { border-top: 1px solid #dce3df; padding-block: 1.4rem 2rem; font-size: 0.9375rem; color: #626b6b; }
+footer p { margin-bottom: 0.5rem; }
+footer span { padding-inline: 0.4rem; color: #77827b; }
+.skip-link { position: absolute; top: -10rem; left: 1rem; background: white; padding: 0.75rem 1rem; }
+.skip-link:focus { top: 0.8rem; }
+@media (max-width: 520px) {
+  header, main, footer { width: calc(100% - 2rem); }
+  header { align-items: flex-start; flex-direction: column; gap: 0.75rem; }
+  main { padding-block: 2.25rem; }
+  h1 { font-size: 2rem; }
+}
+@media print {
+  body { border: 0; }
+  header, main, footer { width: 100%; }
+  nav, .skip-link { display: none; }
+  main { padding-block: 1rem; }
+  a { color: inherit; }
+}
